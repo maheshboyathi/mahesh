@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('stage1') {
       steps {
-        sh 'echo build'
+        sh 'mpstat'
       }
     }
 
-    stage('stage 2') {
+    stage('stage2') {
       steps {
-        sh 'echo deploy'
+        sh 'hostname -i'
       }
     }
 
