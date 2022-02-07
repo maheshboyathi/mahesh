@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('stage1') {
       steps {
-        sh 'mpstat'
+        sh 'du -h'
       }
     }
 
     stage('stage2') {
       steps {
-        sh 'hostname -i'
+        sh 'hostname -I'
       }
     }
 
